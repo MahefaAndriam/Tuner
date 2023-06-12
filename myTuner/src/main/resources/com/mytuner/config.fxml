@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<Accordion maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="111.0" prefWidth="662.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+  <panes>
+    <TitledPane animated="false" prefHeight="170.0" prefWidth="631.0" text="Communication ">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="85.0" prefWidth="607.0">
+               <children>
+                  <Label layoutX="56.0" layoutY="31.0" prefHeight="16.0" prefWidth="121.0" text="Baude rate :" />
+                  <ComboBox fx:id="baudeRate" layoutX="211.0" layoutY="27.0" prefHeight="24.0" prefWidth="267.0" promptText="baude" />
+                  <Button fx:id="updateBaude" layoutX="565.0" layoutY="27.0" mnemonicParsing="false" text="Update" />
+                  <Label fx:id="portName" alignment="CENTER" contentDisplay="CENTER" layoutX="273.0" layoutY="2.0" prefHeight="24.0" prefWidth="114.0" text="Port null" textFill="#5e5958c2" />
+               </children></AnchorPane>
+      </content>
+    </TitledPane>
+    <TitledPane animated="false" text="Changer la durée d'injection">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Slider fx:id="poucenSlide" layoutX="4.0" layoutY="6.0" max="50.0" min="-50.0" prefHeight="16.0" prefWidth="653.0" />
+                  <Button fx:id="updatePourcentage" layoutX="580.0" layoutY="44.0" mnemonicParsing="false" text="Update" />
+                  <Label fx:id="poucenLabel" alignment="CENTER" layoutX="197.0" layoutY="40.0" prefHeight="16.0" prefWidth="267.0" text="0%" />
+               </children></AnchorPane>
+      </content>
+    </TitledPane>
+  </panes>
+</Accordion>

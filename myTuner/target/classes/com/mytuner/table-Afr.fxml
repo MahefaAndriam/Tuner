@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0"
+      prefWidth="960.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <FlowPane alignment="CENTER" columnHalignment="CENTER" prefHeight="10.0" VBox.vgrow="SOMETIMES">
+        <Label alignment="CENTER" contentDisplay="CENTER" text="Table AFR (Air fuel Ratio)" textAlignment="CENTER"/>
+    </FlowPane>
+    <BorderPane fx:id="table_veViewParent">
+        <center>
+            <TableView fx:id="table_veView" editable="true" BorderPane.alignment="CENTER">
+                <columns>
+                    <TableColumn fx:id="pression" minWidth="80.0" resizable="false" sortable="false" text="Pression">
+                        <cellValueFactory>
+                            <PropertyValueFactory property="pression"/>
+                        </cellValueFactory>
+                    </TableColumn>
+                    <TableColumn maxWidth="60.0" prefWidth="60.0" text="Tour moteur">
+                        <columns>
+                            <TableColumn fx:id="col0" sortable="false" text="700">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="col0"/>
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn fx:id="col1" sortable="false" text="1100">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="col1"/>
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn fx:id="col2" sortable="false" text="1500">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="col2"/>
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn fx:id="col3" sortable="false" text="2100">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="col3"/>
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn fx:id="col4" sortable="false" text="2700">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="col4"/>
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn fx:id="col5" sortable="false" text="3300">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="col5"/>
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn fx:id="col6" sortable="false" text="3900">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="col6"/>
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn fx:id="col7" sortable="false" text="4500">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="col7"/>
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn fx:id="col8" sortable="false" text="5100">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="col8"/>
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn fx:id="col9" sortable="false" text="5600">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="col9"/>
+                                </cellValueFactory>
+                            </TableColumn>
+                            <TableColumn fx:id="col10" sortable="false" text="6000">
+                                <cellValueFactory>
+                                    <PropertyValueFactory property="col10"/>
+                                </cellValueFactory>
+                            </TableColumn>
+
+                        </columns>
+                    </TableColumn>
+                </columns>
+                <columnResizePolicy>
+                    <TableView fx:constant="CONSTRAINED_RESIZE_POLICY"/>
+                </columnResizePolicy>
+            </TableView>
+        </center>
+        <bottom>
+            <TextField cacheShape="false" centerShape="false" focusTraversable="false" BorderPane.alignment="CENTER">
+                <BorderPane.margin>
+                    <Insets/>
+                </BorderPane.margin>
+            </TextField>
+        </bottom>
+    </BorderPane>
+    <FlowPane alignment="CENTER_RIGHT" hgap="10.0" prefHeight="10.0" VBox.vgrow="SOMETIMES">
+        <Button fx:id="preChange" mnemonicParsing="false" text="precedent"/>
+        <Button mnemonicParsing="false" onMouseClicked="#refresh" text="refresh"/>
+        <Button mnemonicParsing="false" text="Annuler"/>
+        <Button mnemonicParsing="false" onMouseClicked="#update" text="Update">
+            <FlowPane.margin>
+                <Insets right="13.0"/>
+            </FlowPane.margin>
+        </Button>
+    </FlowPane>
+</VBox>

@@ -1,0 +1,386 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import eu.hansolo.medusa.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import org.kordamp.ikonli.javafx.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+    <HBox prefHeight="33.0" prefWidth="600.0" style="-fx-background-color: #2B2D30;">
+        <children>
+            <GridPane alignment="TOP_RIGHT" gridLinesVisible="true" prefHeight="56.0" prefWidth="463.0" HBox.hgrow="SOMETIMES">
+                <columnConstraints>
+                    <ColumnConstraints fx:id="tableVe_button" hgrow="SOMETIMES" maxWidth="394.0" minWidth="10.0" prefWidth="155.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="365.0" minWidth="10.0" prefWidth="146.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="365.0" minWidth="10.0" prefWidth="148.0" />
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="210.0" minWidth="10.0" prefWidth="154.0" />
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                </rowConstraints>
+                <children>
+                    <Label fx:id="tableVeLabel" alignment="CENTER" contentDisplay="TOP" text="Table VE" textAlignment="CENTER" textFill="WHITE" GridPane.halignment="CENTER" GridPane.hgrow="ALWAYS" GridPane.valignment="CENTER" GridPane.vgrow="ALWAYS" />
+                <Label fx:id="tableAfrLabel" text="Table AFR" textFill="#e8e0e0" GridPane.columnIndex="1" GridPane.halignment="CENTER">
+                    </Label>
+                    <Label text="Configuration" textFill="#DFE1E5" GridPane.columnIndex="3" GridPane.halignment="CENTER">
+                        <graphic>
+                            <FontIcon iconColor="#DFE1E5" iconLiteral="fas-wrench" tabSize="15" wrappingWidth="22.0">
+                                <font>
+                                    <Font size="18.0" />
+                                </font>
+                            </FontIcon>
+                        </graphic>
+                    </Label>
+                    <Label fx:id="enrichAccel" text="Acceleration" textFill="WHITE" GridPane.columnIndex="2" GridPane.halignment="CENTER" />
+                </children>
+                <cursor>
+                    <Cursor fx:constant="CLOSED_HAND" />
+                </cursor>
+            </GridPane>
+        </children>
+    </HBox>
+    <GridPane fx:id="gridPane" alignment="CENTER" style="-fx-background-color: #2B2D30;" VBox.vgrow="ALWAYS">
+        <columnConstraints>
+            <ColumnConstraints fx:id="row0" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints fx:id="col0" minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+            <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <VBox.margin>
+            <Insets />
+        </VBox.margin>
+        <Gauge fx:id="gauge1" alert="true" angleRange="281.0" areaIconsVisible="true" areaTextVisible="true" areasVisible="true" averageVisible="true" averagingEnabled="true" averagingPeriod="4500" backgroundPaint="#1e1f22" barEffectEnabled="true" borderPaint="#262626" borderWidth="10.0" buttonTooltipText="jj" checkAreasForValue="true" checkSectionsForValue="true" checkThreshold="true" customTickLabelFontSize="22.0" decimals="0" foregroundPaint="#cc6818e0" gradientBarEnabled="true" highlightAreas="true" highlightSections="true" innerShadowEnabled="true" interactive="true" knobType="FLAT" lcdDesign="GRAY" lcdFont="ELEKTRA" majorTickMarkType="TRAPEZOID" majorTickSpace="60.0" markersVisible="true" mediumTickMarkType="TICK_LABEL" minMeasuredValueVisible="true" minorTickMarkType="DOT" minorTickMarkWidthFactor="0.002" needleBehavior="OPTIMIZED" sectionsAlwaysVisible="true" sectionsVisible="true" smoothing="true" threshold="4500.0" unit="\%" GridPane.columnIndex="1">
+            <thresholdColor>
+                <Color red="0.9300000071525574" green="0.09300000220537186" opacity="0.18773946166038513" />
+            </thresholdColor>
+            <knobColor>
+                <Color red="0.5394737124443054" green="0.13986355066299438" blue="0.13986355066299438" />
+            </knobColor>
+            <averageColor>
+                <Color red="1.0" />
+            </averageColor>
+            <barBackgroundColor>
+                <Color red="0.11764705926179886" green="0.12156862765550613" blue="0.13333334028720856" />
+            </barBackgroundColor>
+            <barColor>
+                <Color red="0.8421052694320679" />
+            </barColor>
+            <tickLabelColor>
+                <Color red="0.8745098114013672" green="0.8823529481887817" blue="0.8980392217636108" />
+            </tickLabelColor>
+            <tickMarkColor>
+                <Color red="0.9736841917037964" />
+            </tickMarkColor>
+            <titleColor>
+                <Color red="0.5592105388641357" green="0.5701754093170166" blue="0.5921052694320679" />
+            </titleColor>
+            <subTitleColor>
+                <Color red="0.8745098114013672" green="0.8823529481887817" blue="0.8980392217636108" />
+            </subTitleColor>
+            <unitColor>
+                <Color red="0.2763157784938812" green="0.25712719559669495" blue="0.25712719559669495" />
+            </unitColor>
+            <valueColor>
+                <Color red="1.0" green="0.9953703880310059" blue="0.9953703880310059" />
+            </valueColor>
+            <needleColor>
+                <Color red="0.7368420958518982" />
+            </needleColor></Gauge>
+        <Gauge fx:id="gauge2" alert="true" angleRange="281.0" areaIconsVisible="true" areaTextVisible="true" areasVisible="true" averageVisible="true" averagingEnabled="true" averagingPeriod="4500" backgroundPaint="#1e1f22" barEffectEnabled="true" borderPaint="#282828" borderWidth="10.0" buttonTooltipText="jj" checkAreasForValue="true" checkSectionsForValue="true" checkThreshold="true" customTickLabelFontSize="22.0" foregroundPaint="#cc6818e0" gradientBarEnabled="true" highlightAreas="true" highlightSections="true" innerShadowEnabled="true" interactive="true" knobType="FLAT" layoutX="160.0" layoutY="10.0" lcdDesign="GRAY" lcdFont="ELEKTRA" majorTickMarkType="TRAPEZOID" majorTickSpace="60.0" markersVisible="true" maxValue="150.0" mediumTickMarkType="TICK_LABEL" minMeasuredValueVisible="true" minorTickMarkType="DOT" minorTickMarkWidthFactor="0.002" needleBehavior="OPTIMIZED" sectionsAlwaysVisible="true" sectionsVisible="true" smoothing="true" threshold="4500.0" thresholdVisible="true" title="fff" unit="Dégre °" GridPane.columnIndex="2">
+            <thresholdColor>
+                <Color red="0.9300000071525574" green="0.09300000220537186" opacity="0.18773946166038513" />
+            </thresholdColor>
+            <knobColor>
+                <Color red="0.5394737124443054" green="0.13986355066299438" blue="0.13986355066299438" />
+            </knobColor>
+            <averageColor>
+                <Color red="1.0" />
+            </averageColor>
+            <barBackgroundColor>
+                <Color red="0.11764705926179886" green="0.12156862765550613" blue="0.13333334028720856" />
+            </barBackgroundColor>
+            <barColor>
+                <Color red="0.8421052694320679" />
+            </barColor>
+            <tickLabelColor>
+                <Color red="0.8745098114013672" green="0.8823529481887817" blue="0.8980392217636108" />
+            </tickLabelColor>
+            <tickMarkColor>
+                <Color red="0.9736841917037964" />
+            </tickMarkColor>
+            <titleColor>
+                <Color red="0.5592105388641357" green="0.5701754093170166" blue="0.5921052694320679" />
+            </titleColor>
+            <subTitleColor>
+                <Color red="0.8745098114013672" green="0.8823529481887817" blue="0.8980392217636108" />
+            </subTitleColor>
+            <unitColor>
+                <Color red="0.2763157784938812" green="0.25712719559669495" blue="0.25712719559669495" />
+            </unitColor>
+            <valueColor>
+                <Color red="1.0" green="0.9953703880310059" blue="0.9953703880310059" />
+            </valueColor>
+        </Gauge>
+        <Gauge fx:id="gauge3" alert="true" angleRange="281.0" areaIconsVisible="true" areaTextVisible="true" areasVisible="true" averageVisible="true" averagingEnabled="true" averagingPeriod="4500" backgroundPaint="#1e1f22" barEffectEnabled="true" borderPaint="#262626" borderWidth="10.0" buttonTooltipText="jj" checkAreasForValue="true" checkSectionsForValue="true" checkThreshold="true" customTickLabelFontSize="22.0" foregroundPaint="#cc6818e0" gradientBarEnabled="true" highlightAreas="true" highlightSections="true" innerShadowEnabled="true" interactive="true" knobType="FLAT" layoutX="310.0" layoutY="10.0" lcdDesign="GRAY" lcdFont="ELEKTRA" majorTickMarkType="TRAPEZOID" majorTickSpace="60.0" markersVisible="true" maxValue="150.0" mediumTickMarkType="TICK_LABEL" minMeasuredValueVisible="true" minorTickMarkType="DOT" minorTickMarkWidthFactor="0.002" needleBehavior="OPTIMIZED" sectionsAlwaysVisible="true" sectionsVisible="true" smoothing="true" threshold="4500.0" thresholdVisible="true" unit="Dégre °" GridPane.columnIndex="3">
+            <thresholdColor>
+                <Color red="0.9300000071525574" green="0.09300000220537186" opacity="0.18773946166038513" />
+            </thresholdColor>
+            <knobColor>
+                <Color red="0.5394737124443054" green="0.13986355066299438" blue="0.13986355066299438" />
+            </knobColor>
+            <averageColor>
+                <Color red="1.0" />
+            </averageColor>
+            <barBackgroundColor>
+                <Color red="0.11764705926179886" green="0.12156862765550613" blue="0.13333334028720856" />
+            </barBackgroundColor>
+            <barColor>
+                <Color red="0.8421052694320679" />
+            </barColor>
+            <tickLabelColor>
+                <Color red="0.8745098114013672" green="0.8823529481887817" blue="0.8980392217636108" />
+            </tickLabelColor>
+            <tickMarkColor>
+                <Color red="0.9736841917037964" />
+            </tickMarkColor>
+            <titleColor>
+                <Color red="0.5592105388641357" green="0.5701754093170166" blue="0.5921052694320679" />
+            </titleColor>
+            <subTitleColor>
+                <Color red="0.8745098114013672" green="0.8823529481887817" blue="0.8980392217636108" />
+            </subTitleColor>
+            <unitColor>
+                <Color red="0.2763157784938812" green="0.25712719559669495" blue="0.25712719559669495" />
+            </unitColor>
+            <valueColor>
+                <Color red="1.0" green="0.9953703880310059" blue="0.9953703880310059" />
+            </valueColor>
+        </Gauge>
+        <Gauge fx:id="gauge4" alert="true" angleRange="281.0" areaIconsVisible="true" areaTextVisible="true" areasVisible="true" averageVisible="true" averagingEnabled="true" averagingPeriod="4500" backgroundPaint="#1e1f22" barEffectEnabled="true" borderPaint="#262626" borderWidth="10.0" buttonTooltipText="jj" checkAreasForValue="true" checkSectionsForValue="true" checkThreshold="true" customTickLabelFontSize="22.0" foregroundPaint="#cc6818e0" gradientBarEnabled="true" highlightAreas="true" highlightSections="true" innerShadowEnabled="true" interactive="true" knobType="FLAT" layoutX="160.0" layoutY="10.0" lcdDesign="GRAY" lcdFont="ELEKTRA" majorTickMarkType="TRAPEZOID" majorTickSpace="60.0" markersVisible="true" maxValue="5000.0" mediumTickMarkType="TICK_LABEL" minMeasuredValueVisible="true" minorTickMarkType="DOT" minorTickMarkWidthFactor="0.002" needleBehavior="OPTIMIZED" sectionsAlwaysVisible="true" sectionsVisible="true" smoothing="true" threshold="4000.0" thresholdVisible="true" unit="ms" GridPane.rowIndex="1">
+            <thresholdColor>
+                <Color red="0.9300000071525574" green="0.09300000220537186" opacity="0.18773946166038513" />
+            </thresholdColor>
+            <knobColor>
+                <Color red="0.5394737124443054" green="0.13986355066299438" blue="0.13986355066299438" />
+            </knobColor>
+            <averageColor>
+                <Color red="1.0" />
+            </averageColor>
+            <barBackgroundColor>
+                <Color red="0.11764705926179886" green="0.12156862765550613" blue="0.13333334028720856" />
+            </barBackgroundColor>
+            <barColor>
+                <Color red="0.8421052694320679" />
+            </barColor>
+            <tickLabelColor>
+                <Color red="0.8745098114013672" green="0.8823529481887817" blue="0.8980392217636108" />
+            </tickLabelColor>
+            <tickMarkColor>
+                <Color red="0.9736841917037964" />
+            </tickMarkColor>
+            <titleColor>
+                <Color red="0.5592105388641357" green="0.5701754093170166" blue="0.5921052694320679" />
+            </titleColor>
+            <subTitleColor>
+                <Color red="0.8745098114013672" green="0.8823529481887817" blue="0.8980392217636108" />
+            </subTitleColor>
+            <unitColor>
+                <Color red="0.2763157784938812" green="0.25712719559669495" blue="0.25712719559669495" />
+            </unitColor>
+            <valueColor>
+                <Color red="1.0" green="0.9953703880310059" blue="0.9953703880310059" />
+            </valueColor>
+        </Gauge>
+        <Gauge fx:id="gauge0" alert="true" angleRange="281.0" areaIconsVisible="true" areaTextVisible="true" areasVisible="true" averageVisible="true" averagingEnabled="true" averagingPeriod="4500" backgroundPaint="#1e1f22" barEffectEnabled="true" borderPaint="#262626" borderWidth="10.0" buttonTooltipText="jj" checkAreasForValue="true" checkSectionsForValue="true" checkThreshold="true" customTickLabelFontSize="22.0" foregroundPaint="#cc6818e0" gradientBarEnabled="true" highlightAreas="true" highlightSections="true" innerShadowEnabled="true" interactive="true" knobType="FLAT" layoutX="10.0" layoutY="10.0" lcdDesign="GRAY" lcdFont="ELEKTRA" majorTickMarkType="TRAPEZOID" majorTickSpace="60.0" markersVisible="true" maxValue="5000.0" mediumTickMarkType="TICK_LABEL" minMeasuredValueVisible="true" minorTickMarkType="DOT" minorTickMarkWidthFactor="0.002" needleBehavior="OPTIMIZED" sectionsAlwaysVisible="true" sectionsVisible="true" smoothing="true" threshold="4500.0" thresholdVisible="true" title="fff" unit="Tr/mn">
+            <thresholdColor>
+                <Color red="0.09210526198148727" green="0.08702383935451508" blue="0.0865618884563446" opacity="0.1899999976158142" />
+            </thresholdColor>
+            <knobColor>
+                <Color red="0.5394737124443054" green="0.13986355066299438" blue="0.13986355066299438" />
+            </knobColor>
+            <averageColor>
+                <Color red="1.0" />
+            </averageColor>
+            <barBackgroundColor>
+                <Color red="0.11764705926179886" green="0.12156862765550613" blue="0.13333334028720856" />
+            </barBackgroundColor>
+            <barColor>
+                <Color red="0.8421052694320679" />
+            </barColor>
+            <tickLabelColor>
+                <Color red="0.8745098114013672" green="0.8823529481887817" blue="0.8980392217636108" />
+            </tickLabelColor>
+            <tickMarkColor>
+                <Color red="0.9736841917037964" />
+            </tickMarkColor>
+            <titleColor>
+                <Color red="0.5592105388641357" green="0.5701754093170166" blue="0.5921052694320679" />
+            </titleColor>
+            <subTitleColor>
+                <Color red="0.8745098114013672" green="0.8823529481887817" blue="0.8980392217636108" />
+            </subTitleColor>
+            <unitColor>
+                <Color red="0.2763157784938812" green="0.25712719559669495" blue="0.25712719559669495" />
+            </unitColor>
+            <valueColor>
+                <Color red="1.0" green="0.9953703880310059" blue="0.9953703880310059" />
+            </valueColor>
+            <minorTickMarkColor>
+                <Color red="0.1315789520740509" green="0.1315789520740509" blue="0.1315789520740509" />
+            </minorTickMarkColor>
+        </Gauge>
+        <Gauge fx:id="gauge6" alert="true" angleRange="281.0" areaIconsVisible="true" areaTextVisible="true" areasVisible="true" averageVisible="true" averagingEnabled="true" averagingPeriod="4500" backgroundPaint="#1e1f22" barEffectEnabled="true" borderPaint="#262626" borderWidth="10.0" buttonTooltipText="jj" checkAreasForValue="true" checkSectionsForValue="true" checkThreshold="true" customTickLabelFontSize="22.0" foregroundPaint="#cc6818e0" gradientBarEnabled="true" highlightAreas="true" highlightSections="true" innerShadowEnabled="true" interactive="true" knobType="FLAT" layoutX="10.0" layoutY="10.0" lcdDesign="GRAY" lcdFont="ELEKTRA" majorTickMarkType="TRAPEZOID" majorTickSpace="60.0" markersVisible="true" mediumTickMarkType="TICK_LABEL" minMeasuredValueVisible="true" minorTickMarkType="DOT" minorTickMarkWidthFactor="0.002" needleBehavior="OPTIMIZED" sectionsAlwaysVisible="true" sectionsVisible="true" smoothing="true" unit="\%" GridPane.columnIndex="2" GridPane.rowIndex="1">
+            <thresholdColor>
+                <Color red="0.9300000071525574" green="0.09300000220537186" opacity="0.18773946166038513" />
+            </thresholdColor>
+            <knobColor>
+                <Color red="0.5394737124443054" green="0.13986355066299438" blue="0.13986355066299438" />
+            </knobColor>
+            <averageColor>
+                <Color red="1.0" />
+            </averageColor>
+            <barBackgroundColor>
+                <Color red="0.11764705926179886" green="0.12156862765550613" blue="0.13333334028720856" />
+            </barBackgroundColor>
+            <barColor>
+                <Color red="0.8421052694320679" />
+            </barColor>
+            <tickLabelColor>
+                <Color red="0.8745098114013672" green="0.8823529481887817" blue="0.8980392217636108" />
+            </tickLabelColor>
+            <tickMarkColor>
+                <Color red="0.9736841917037964" />
+            </tickMarkColor>
+            <titleColor>
+                <Color red="0.5592105388641357" green="0.5701754093170166" blue="0.5921052694320679" />
+            </titleColor>
+            <subTitleColor>
+                <Color red="0.8745098114013672" green="0.8823529481887817" blue="0.8980392217636108" />
+            </subTitleColor>
+            <unitColor>
+                <Color red="0.2763157784938812" green="0.25712719559669495" blue="0.25712719559669495" />
+            </unitColor>
+            <valueColor>
+                <Color red="1.0" green="0.9953703880310059" blue="0.9953703880310059" />
+            </valueColor>
+        </Gauge>
+        <Gauge fx:id="gauge5" alert="true" angleRange="281.0" areaIconsVisible="true" areaTextVisible="true" areasVisible="true" averageVisible="true" averagingEnabled="true" averagingPeriod="4500" backgroundPaint="#1e1f22" barEffectEnabled="true" borderPaint="#262626" borderWidth="10.0" buttonTooltipText="jj" checkAreasForValue="true" checkSectionsForValue="true" checkThreshold="true" customTickLabelFontSize="22.0" foregroundPaint="#cc6818e0" gradientBarEnabled="true" highlightAreas="true" highlightSections="true" innerShadowEnabled="true" interactive="true" knobType="FLAT" layoutX="10.0" layoutY="10.0" lcdDesign="GRAY" lcdFont="ELEKTRA" majorTickMarkType="TRAPEZOID" majorTickSpace="60.0" markersVisible="true" mediumTickMarkType="TICK_LABEL" minMeasuredValueVisible="true" minorTickMarkType="DOT" minorTickMarkWidthFactor="0.002" needleBehavior="OPTIMIZED" sectionsAlwaysVisible="true" sectionsVisible="true" smoothing="true" threshold="4500.0" unit="\%" GridPane.columnIndex="1" GridPane.rowIndex="1">
+            <thresholdColor>
+                <Color red="0.9300000071525574" green="0.09300000220537186" opacity="0.18773946166038513" />
+            </thresholdColor>
+            <knobColor>
+                <Color red="0.5394737124443054" green="0.13986355066299438" blue="0.13986355066299438" />
+            </knobColor>
+            <averageColor>
+                <Color red="1.0" />
+            </averageColor>
+            <barBackgroundColor>
+                <Color red="0.11764705926179886" green="0.12156862765550613" blue="0.13333334028720856" />
+            </barBackgroundColor>
+            <barColor>
+                <Color red="0.8421052694320679" />
+            </barColor>
+            <tickLabelColor>
+                <Color red="0.8745098114013672" green="0.8823529481887817" blue="0.8980392217636108" />
+            </tickLabelColor>
+            <tickMarkColor>
+                <Color red="0.9736841917037964" />
+            </tickMarkColor>
+            <titleColor>
+                <Color red="0.5592105388641357" green="0.5701754093170166" blue="0.5921052694320679" />
+            </titleColor>
+            <subTitleColor>
+                <Color red="0.8745098114013672" green="0.8823529481887817" blue="0.8980392217636108" />
+            </subTitleColor>
+            <unitColor>
+                <Color red="0.2763157784938812" green="0.25712719559669495" blue="0.25712719559669495" />
+            </unitColor>
+            <valueColor>
+                <Color red="1.0" green="0.9953703880310059" blue="0.9953703880310059" />
+            </valueColor>
+        </Gauge>
+        <Gauge fx:id="gauge7" alert="true" angleRange="281.0" areaIconsVisible="true" areaTextVisible="true" areasVisible="true" averageVisible="true" averagingEnabled="true" averagingPeriod="4500" backgroundPaint="#1e1f22" barEffectEnabled="true" borderPaint="#282828" borderWidth="10.0" buttonTooltipText="jj" checkAreasForValue="true" checkSectionsForValue="true" checkThreshold="true" customTickLabelFontSize="22.0" foregroundPaint="#cc6818e0" gradientBarEnabled="true" highlightAreas="true" highlightSections="true" innerShadowEnabled="true" interactive="true" knobType="FLAT" layoutX="10.0" layoutY="10.0" lcdDesign="GRAY" lcdFont="ELEKTRA" majorTickMarkType="TRAPEZOID" majorTickSpace="60.0" markersVisible="true" maxValue="150.0" mediumTickMarkType="TICK_LABEL" minMeasuredValueVisible="true" minorTickMarkType="DOT" minorTickMarkWidthFactor="0.002" needleBehavior="OPTIMIZED" sectionsAlwaysVisible="true" sectionsVisible="true" smoothing="true" threshold="4500.0" thresholdVisible="true" unit="Kpa" GridPane.columnIndex="3" GridPane.rowIndex="1">
+            <thresholdColor>
+                <Color red="0.9300000071525574" green="0.09300000220537186" opacity="0.18773946166038513" />
+            </thresholdColor>
+            <knobColor>
+                <Color red="0.5394737124443054" green="0.13986355066299438" blue="0.13986355066299438" />
+            </knobColor>
+            <averageColor>
+                <Color red="1.0" />
+            </averageColor>
+            <barBackgroundColor>
+                <Color red="0.11764705926179886" green="0.12156862765550613" blue="0.13333334028720856" />
+            </barBackgroundColor>
+            <barColor>
+                <Color red="0.8421052694320679" />
+            </barColor>
+            <tickLabelColor>
+                <Color red="0.8745098114013672" green="0.8823529481887817" blue="0.8980392217636108" />
+            </tickLabelColor>
+            <tickMarkColor>
+                <Color red="0.9736841917037964" />
+            </tickMarkColor>
+            <titleColor>
+                <Color red="0.5592105388641357" green="0.5701754093170166" blue="0.5921052694320679" />
+            </titleColor>
+            <subTitleColor>
+                <Color red="0.8745098114013672" green="0.8823529481887817" blue="0.8980392217636108" />
+            </subTitleColor>
+            <unitColor>
+                <Color red="0.2763157784938812" green="0.25712719559669495" blue="0.25712719559669495" />
+            </unitColor>
+            <valueColor>
+                <Color red="1.0" green="0.9953703880310059" blue="0.9953703880310059" />
+            </valueColor>
+        </Gauge>
+
+    </GridPane>
+    <GridPane prefHeight="35.0" prefWidth="600.0" style="-fx-background-color: #2B2D30;" VBox.vgrow="SOMETIMES">
+        <columnConstraints>
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="489.0" minWidth="10.0" prefWidth="151.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="540.0" minWidth="10.0" prefWidth="184.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="540.0" minWidth="10.0" prefWidth="171.0" />
+            <ColumnConstraints hgrow="SOMETIMES" maxWidth="540.0" minWidth="10.0" prefWidth="169.0" />
+        </columnConstraints>
+        <rowConstraints>
+            <RowConstraints maxHeight="47.0" minHeight="10.0" prefHeight="23.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="45.0" minHeight="10.0" prefHeight="12.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+        <children>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #1E1F22;">
+                <effect>
+                    <Blend />
+                </effect>
+                <cursor>
+                    <Cursor fx:constant="NONE" />
+                </cursor>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="25.0" prefWidth="138.0" style="-fx-border-color: #1E1F22;" GridPane.columnIndex="1">
+                <children>
+                    <Label text="Accélerer" />
+                </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #1E1F22;" GridPane.columnIndex="2">
+                <children>
+                    <Label text="Batterie" />
+                </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" style="-fx-border-color: #1E1F22;" GridPane.columnIndex="3">
+                <children>
+                    <Label />
+                </children>
+            </HBox>
+            <Label fx:id="status_label" text="Connecter" textFill="#3c3838" GridPane.columnIndex="3" GridPane.halignment="RIGHT" GridPane.rowIndex="1" />
+        </children>
+    </GridPane>
+</VBox>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+
+<HBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="31.0" prefWidth="300.0" style="-fx-background-color: #353535;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="portStatusLabel" contentDisplay="BOTTOM" prefHeight="16.0" text="     Attente de connexion (COM)" textFill="#a8a8a8" />
+      <ImageView fitHeight="61.0" fitWidth="86.0" smooth="false" style="-fx-opacity: 0.1;">
+         <image>
+            <Image url="@facebook.gif" />
+         </image>
+         <HBox.margin>
+            <Insets top="5.0" />
+         </HBox.margin>
+      </ImageView>
+   </children>
+</HBox>

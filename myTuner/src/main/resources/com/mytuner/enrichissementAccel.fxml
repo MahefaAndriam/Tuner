@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.cell.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <LineChart fx:id="chartEnrichAccel" alternativeColumnFillVisible="true" prefHeight="259.0" prefWidth="539.0" title="Enrichissement à l’accélération">
+        <xAxis>
+          <NumberAxis fx:id="tpsDotAxisX" label="TPSdot" prefHeight="42.0" prefWidth="517.0" tickMarkVisible="false" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis fx:id="enrichAxisY" label="Enrichiessement" prefHeight="198.0" prefWidth="53.0" side="LEFT" />
+        </yAxis>
+      </LineChart>
+      <TableView fx:id="tableEnrichAccel" prefHeight="174.0" prefWidth="600.0" VBox.vgrow="SOMETIMES">
+        <columns>
+            <TableColumn fx:id="tpsDotAxis" prefWidth="75.0" text="TPSdot (%/s)">
+                <cellValueFactory>
+                    <PropertyValueFactory property="tpsDotAxis" />
+                </cellValueFactory>
+            </TableColumn>
+            <TableColumn fx:id="enrichAxis" prefWidth="75.0" text="Enrichissment (%)">
+                <cellValueFactory>
+                    <PropertyValueFactory property="enrichAxis" />
+                </cellValueFactory>
+            </TableColumn>
+        </columns>
+         <padding>
+            <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+         </padding>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <HBox alignment="CENTER_RIGHT" prefHeight="42.0" prefWidth="600.0" spacing="5.0">
+         <children>
+            <Button mnemonicParsing="false" text="Annuler">
+               <HBox.margin>
+                  <Insets bottom="5.0" />
+               </HBox.margin>
+            </Button>
+            <Button fx:id="updateEnrichAccel" mnemonicParsing="false" text="Mentre à jour">
+               <HBox.margin>
+                  <Insets bottom="5.0" right="5.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>
